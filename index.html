@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo">Lang UP</div>
+    <button id="langBtn">🌐 RU</button>
+  </div>
+  <!-- MAIN -->
+  <div class="app">
+
+<div id="wordBoxContainer">
+  <div id="wordBox"></div>
+  <div class="active-line"></div>
+</div>
+
+
+
+    <!-- 9 кнопок -->
+    <div id="options">
+      <button class="option-btn">Вариант 1</button>
+      <button class="option-btn">Вариант 2</button>
+      <button class="option-btn">Вариант 3</button>
+      <button class="option-btn">Вариант 4</button>
+      <button class="option-btn">Вариант 5</button>
+      <button class="option-btn">Вариант 6</button>
+      <button class="option-btn">Вариант 7</button>
+      <button class="option-btn">Вариант 8</button>
+      <button class="option-btn">Вариант 9</button>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <button id="infoBtn">ℹ️ Info</button>
+    <button id="helpBtn">💡 Help</button>
+  </div>
+<script src="script.js"></script>
+
+<div id="infoModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); backdrop-filter: blur(4px); z-index:9999;">
+  
+  <div style="
+    background:#0f172a;
+    color:white;
+    max-width:420px;
+    margin:100px auto;
+    padding:20px;
+    border-radius:12px;
+    line-height:1.5;
+  ">
+    
+    <div id="infoText"></div>
+
+    <button id="closeInfoBtn" style="margin-top:15px; padding:8px 12px; border:none; border-radius:8px; cursor:pointer;">
+      Закрыть
+    </button>
+
+  </div>
+</div>
+</body>
+</html>
