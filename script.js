@@ -113,7 +113,6 @@ async function loadData() {
     console.warn("❌ Local failed, trying GitHub");
 
     let res = await fetch("https://raw.githubusercontent.com/langupp/wordcraftlu/main/sentences.json");
-    data = await res.json();");
     data = await res.json();
 
     console.log("✅ GitHub JSON loaded");
