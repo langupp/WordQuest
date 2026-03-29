@@ -98,7 +98,22 @@ async function loadData() {
   } catch (e) {
     console.warn("❌ Local failed, trying GitHub");
 
-    let res = await fetch("YOUR_GITHUB_RAW_JSON_URL");
+    let res = await fetch("async function loadData() {
+  console.log("🚀 Loading JSON...");
+
+  try {
+    let res = await fetch("./sentences.json");
+
+    if (!res.ok) throw new Error("Local failed");
+
+    data = await res.json();
+
+    console.log("✅ Local JSON loaded");
+  } catch (e) {
+    console.warn("❌ Local failed, trying GitHub");
+
+    let res = await fetch("https://raw.githubusercontent.com/langupp/wordcraftlu/main/sentences.json");
+    data = await res.json();");
     data = await res.json();
 
     console.log("✅ GitHub JSON loaded");
